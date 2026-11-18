@@ -1,0 +1,91 @@
++<!--
+  Name: Haneen Hamada Shrief
+  Student ID: 225106148
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haneen Hamada Shrief| Profile Page</title>
+
+  <!-- The stylesheet is linked from head -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER: the heading, then the bar -->
+  <header id="top">
+    <h1>Haneen Hamada Shrief</h1>
+
+    <!-- The bar: name on the left, links on the right -->
+    <nav class="bar">
+      <span class="bar-name">Haneen Hamada Shrief</span>
+      <ul class="bar-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#cards">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- The dark mode button (JavaScript finds it by its id) -->
+    <button id="theme-button" type="button">Toggle dark mode</button>
+  </header>
+
+  <!-- MAIN: photo, cards, form -->
+  <main>
+
+    <!-- One photo. The path starts from index.html. -->
+    <section class="photo-section">
+      <img src="images/me.jpg" alt="Haneen Hamada Shrief" class="photo">
+    </section>
+
+    <!-- Three cards in one row -->
+    <section id="cards">
+      <div class="cards">
+        <article class="card">
+          <h2>Skills</h2>
+          <p>Coding and Problem solving</p>
+        </article>
+
+        <article class="card">
+          <h2>Hobbies</h2>
+          <p>Designing and Drawing.</p>
+        </article>
+
+        <article class="card">
+          <h2>Goals</h2>
+          <p> Become a skilled frontend developer.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Form: every label's "for" matches its input's "id" -->
+    <section id="contact">
+      <h2>Leave a message</h2>
+      <form action="#" method="get">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <button type="submit" class="submit-button">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: one copyright line -->
+  <footer>
+    <p>&copy; 2026 Haneen Hamada Shrief. All rights reserved.</p>
+  </footer>
+
+  <!-- The script is the last thing inside body -->
+  <script src="js/script.js"></script>
+</body>
+</html>
